@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1565405062418" clover="3.2.0">
+  <project timestamp="1565405062418" name="All files">
+    <metrics statements="26" coveredstatements="23" conditionals="14" coveredconditionals="12" methods="3" coveredmethods="2" elements="43" coveredelements="37" complexity="0" loc="26" ncloc="26" packages="1" files="1" classes="1"/>
+    <file name="app.js" path="C:\Users\Usuario\Documents\LP3\LP3_2019_2\Aula01\app.js">
+      <metrics statements="26" coveredstatements="23" conditionals="14" coveredconditionals="12" methods="3" coveredmethods="2"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="17" count="3" type="stmt"/>
+      <line num="19" count="3" type="stmt"/>
+      <line num="20" count="3" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="12" type="stmt"/>
+      <line num="27" count="12" type="stmt"/>
+      <line num="29" count="12" type="stmt"/>
+      <line num="31" count="12" type="cond" truecount="1" falsecount="1"/>
+      <line num="33" count="108" type="stmt"/>
+      <line num="34" count="12" type="stmt"/>
+      <line num="36" count="12" type="cond" truecount="4" falsecount="0"/>
+      <line num="37" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="39" count="12" type="stmt"/>
+      <line num="40" count="120" type="stmt"/>
+      <line num="41" count="12" type="stmt"/>
+      <line num="43" count="12" type="cond" truecount="3" falsecount="1"/>
+      <line num="44" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="45" count="10" type="stmt"/>
+      <line num="49" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
