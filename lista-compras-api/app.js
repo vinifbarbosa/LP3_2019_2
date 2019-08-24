@@ -1,7 +1,11 @@
 const express = require('express');
+
+// Middlewares 
 const logger = require('morgan'); //ele da logs mais detalhados 
 const cors = require('cors');
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');// faz o parciamento interpretação do json
+
+const rotasListas = require("./routes/listas");
 
 const app = express();
 
@@ -21,5 +25,11 @@ app.use(cors());
  * em formato JSON 
  */
 app.use(bodyParser.json());
+
+/**
+ * Registra as rotas relacionadas
+ * a listas
+ */
+app.use(rotasListas);
 
 module.exports = app;
