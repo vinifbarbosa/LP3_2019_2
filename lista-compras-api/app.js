@@ -6,6 +6,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');// faz o parciamento interpretação do json
 
 const rotasListas = require("./routes/listas");
+require("./databases/db");
 
 const app = express();
 
