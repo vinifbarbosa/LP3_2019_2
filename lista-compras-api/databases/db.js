@@ -1,34 +1,10 @@
-const Sequelize = require("sequelize");
+const mongoose = require("mongoose");
 
-const dbConfig= require("./config");
-const ListaModel=require("../models/ListaModel");
+//por padrao nao coloca porta,pois na instalação normal,usará a porta padrao
+const dbURI="mongodb://localhost/lista-compras-dev";
 
-const modo = process.env.NODE_ENV || "development";
 
-const config = dbConfig[modo];
-
-const conexao = new Sequelize(
-    config.db, 
-    config.user, 
-    config.password, {
-        host: config.host, 
-        dialect:config.dialect,
-        port: config.port
-});
-
-/**
- * Você precisa inicializar todos os modelos
- * antes da sincronização que ocorre 
- * logo abaixo!
- */
-
- const Lista=ListaModel(conexao,Sequelize);
-
-conexao
-.sync({alter:true})
-.then (() => console.log("BD Conectado e sincronizado"));
-
-const db = {Lista};
-
-module.exports=db;
-    
+mongoose.connect(
+dbURI,{useNewUrlParser: true})
+.then(() => console.log("Mongoose conectado"))
+.catch(erro => console.log(erro));

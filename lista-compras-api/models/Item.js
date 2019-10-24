@@ -1,11 +1,15 @@
-    class Item {
-constructor() {
-    this.id = `${new Date().getMilliseconds()}`; //Convertendo milisegundos para String    
-        this.decricao="";
-        this.unidade="";
-        this.quantidade = 0;
-}
+const {Schema,model} = require("mongoose");
+
+const esquema = new Schema({
+    descricao: {
+        type:String,
+        required:true
+    },
+    unidade: {
+        type:String,
+        required:true
     }
+});
 
-
-    module.exports= Item;
+const Item = mododel("Item", esquema);
+module.exports=Item;

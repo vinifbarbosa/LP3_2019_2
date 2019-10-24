@@ -12,8 +12,9 @@ const router = express.Router();
 /**
  * Rota para o serviço: /listas
  * Verbo HTTP:GET
- */
+ *
 router.get("/",ListaController.recuperarTodas);
+
 
 /**
  * Rota para o servico: /listas
