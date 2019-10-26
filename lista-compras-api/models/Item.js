@@ -11,5 +11,5 @@ const esquema = new Schema({
     }
 });
 
-const Item = mododel("Item", esquema);
+const Item = model("Item", esquema);
 module.exports=Item;
