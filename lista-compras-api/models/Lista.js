@@ -1,22 +1,21 @@
 const {
     Schema,
     model,
-    ObjectId } = require("mongoose");
+    ObjectId
+} = require('mongoose');
 
 const esquema = new Schema({
     nome: {
         type: String,
-        required:true
+        required: true
     },
-    itens : {
-        type:[ 
-            {
-                type:ObjectId,
-                ref:"Item"
-            }
-        ]
-    }
+    itens: [
+        {
+            type: ObjectId,
+            ref: 'Item'
+        }
+    ]
 });
 
-const Lista = model("Lista", esquema);
-module.exports=Lista;
+const Lista = model('Lista', esquema);
+module.exports = Lista;
